@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+
+}
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image: url('./projectt.jfif');
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    
+}
+ .navbar ul li{
+    list-style-type: none;
+    display: flex;
+    margin: 0 20px;
+    position: relative;
+
+ }
+ ul {
+    display: flex;
+ }
+ li {
+    list-style-type: none;
+ }
+
+ .navbar ul li a{
+    text-decoration: none;
+    color: rgb(159, 53, 53);
+    text-transform: uppercase;
+    font
+ }
+ .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e69470;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+ }
+ .navbar ul li:hover::after{
+    width: 100%;
+ }
+ .content{
+    width: 100%;
+    position: absolute; 
+   top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(203, 60, 3);
+ } 
+ button{ 
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #f4938e;
+    background: transparent;
+    color: rgb(80, 69, 69);
+    cursor: pointer;
+    position: relative;
+    overflow:inherit
+ } 
+
+ 
+
+ span{
+    background: #dc8675f3;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.10s;
+
+ }
+ button:hover span{
+   width: 100%;
+ }
+ button:hover{
+    border: none;
+ }
+ 
